@@ -1,3 +1,7 @@
+body {
+  background-color:  dimGray;
+}
+
 mantra-text {
   width: 50%;
 }
@@ -14,6 +18,29 @@ mantra-text {
 .Mantra {
   background-color: #A82FC1
 }
+
+.mantra-div {
+  text-align: center;
+  padding-left: 25%;
+  padding-right: 25%;
+  /* background-color: dimGray; */
+}
+
+.mantra-text {
+  text-align: left;
+  color: white;
+}
+
+.mantra-title {
+  text-align: center;
+  color: white;
+}
+
+.mantra-header {
+  text-align: center;
+  color: red;
+}
+
 
 /* #root {
   background-color: #A82FC1
