@@ -1,5 +1,6 @@
 import React from 'react';
 import YouTube from 'react-youtube';
+import './WheelieKid.css';
 
 class WheelieKid extends React.Component {
 
@@ -16,12 +17,15 @@ class WheelieKid extends React.Component {
     };
 
     return (
+      <div className="wk">
       <YouTube
         videoId={wheelieKidVidId}
         // videoId={catVidId}
         opts={opts}
         onReady={this._onReady}
+        className="wk"
       />
+      </div>
     );
   }
 

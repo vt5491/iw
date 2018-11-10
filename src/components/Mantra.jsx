@@ -36,6 +36,26 @@ class Mantra extends React.Component {
         <p>However, every once in a while, and out of the blue, somehow you find yourself riding out an incredibly long "singular" wheelie. It feels wonderful, empowering, and gracefully peaceful. It's zen-like bliss. It usually happens when you're not thinking about it or trying especially hard.  Momentarily it feels like you can hold it forever.   Of course, the <em>instant</em> you have this thought you know you're doomed!  But that feeling you get right before you start to "think" about it, and the few seconds afterward while you're still maintaining it (much to your amazement)-- that's what the infinite wheelie experience is all about.</p>
         <p/>
         <WheelieKid></WheelieKid>
+        <h3 className='mantra-header'>What is the infinite wheelie way?</h3>
+
+<p>The infinite wheelie way is about productively sublimating one's eternal will into positive, productive, and rational endeavors.  It involves constant and never-ending improvement through relentless directed learning as well as just-in-time learning.  It's about balancing will and wisdom: trying to maximize wisdom while maintaining a sustainable supply of will.  It's about being substrate-independent and not shackling yourself to any one technology stack: being a <em>compleat</em>, full-stack, multi-paradigmatic developer.  It's about integrating your higher and lower selves, and recognizing both the implicate and explicate order. It's about having the guts to try new things and taking the risks and sacrifices to get there.</p>
+
+<p>And it's also about implementing and manifesting that potential into reality -- in the form of creating actual workable software.  </p>
+
+<p>It's about being at one with the infinite wheelie.</p>
+
+<p>Are you at one with the Infinite Wheelie?</p>
+
+<p>Strive to be at one with infinite wheelie...</p>
+        <h3 className='mantra-header'>Apps</h3>
+          <p/>
+          <div className='mantra-app'>
+          <a  href="https://infinitewheelie.org/apps/vrgal/">VRGal</a>
+          </div>
+
+<div className='mantra-footer'>
+<p>The Infinite Wheelie is powered by <a href="https://www.youtube.com/watch?v=AGPlqP0tUyE&amp;list=PLiMRYDGr3ap04uX70m2R7p3REe4PSRFW2">ontolgical mathematics</a></p>
+</div>
       </div>
     </mantra-text>
         // ReactDOM.render('<WheelieKid></WheelieKid>');

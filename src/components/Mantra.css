@@ -41,6 +41,14 @@ mantra-text {
   color: red;
 }
 
+.mantra-app {
+  text-align: center;
+}
+
+.mantra-footer {
+  padding-top: 20px;
+}
+
 
 /* #root {
   background-color: #A82FC1
