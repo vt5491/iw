@@ -1,28 +1,84 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './Mantra.css';
 // import WheelieKid from 'WheelieKid';
 // import {WheelieKid} from './WheelieKid';
 import WheelieKid from './WheelieKid';
+import VRGalIntro from './intros/VRGalIntro';
 
+//stash code
+                  // state: {fuckWithMyState: this.fuckWithMyState.bind(this)} }}
+                // pnClick={() => {
+                //   console.log(`now in onClick`);
+                //   // this.props.parms.setActiveComponent('vrgal-intro');
+                //   this.state.activeComponent = 'vrgal-intro';
+                //   // console.log(`now in onClick, isHidden=${this.state.isHidden}`);
+                //   // this.toggleHidden.bind(this);
+                //   // this.state.isHidden = !this.state.isHidden;
+                //   // console.log(`post onClick, isHidden=${this.state.isHidden}`);
+                //   // this.state.callback();
+                // }}
+                // state= {fuckWithMyState: this.fuckWithMyState.bind(this)}
+                // to={{ pathname: "/apps/vrgal-intro",
+                // state: {def: 8} }}
+        // <Router callBack = {this.update} >
+        //   <div>
+        //     <ul>
+        //       <li>
+        //       <Link
+        //         onclick={this.goToNextPage}
+        //         >VRGal-route</Link>
+        //       </li>
+        //     </ul>
+        //     <Route path="/apps/vrgal-intro" component={VRGalIntro} />
+        //   </div>
+        // </Router>
 
 class Mantra extends React.Component {
   constructor(props) {
     super(props);
     // this.abc = "text-align: right";
     this.centerAlign = "center";
+
+    // props.state.isHidden = false;
+    // this.state = {date: new Date()};
+    this.state = {isHidden: false};
+    // this.props.callback = this.update;
+    this.state.callback = this.update;
+    this.state.abc = 7;
+    // debugger;
+    // console.log(`Mantra: abc=${this.state.abc}`);
+    this.state.activeComponent = "mantra";
+  }
+
+  toggleHidden () {
+    console.log(`Mantra: now in toggleHidden`);
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+  update() {
+    console.log(`Mantra: now in update`);
+    this.setState({ abc: 7, isHidden: true});
+  }
+
+  fuckWithMyState() {
+    debugger;
+    this.state.abc = this.state.abc + 1;
+  }
+
+  goToNextPage = (fuckWithMyState) => {
+    // debugger;
+    console.log(`Mantra.goToNextPage: entered`);
+    this.props.history.push({
+      pathname: '/apps/vrgal-intro',
+      state: { fuckWithMyState: fuckWithMyState }
+    });
   }
 
   text() {
     return (
-    // <={ this.props.className }>
-    // <textarea cols="50">
-    // </textarea>
-    // <mantra-text id="mt" className="mantra-text">
-    // <mantra-text className="mantra-text">
-      // style={{text-align: right}}
-      // style={{marginRight: spacing + 'em'}}
-      // style={'abc'}
-      // style={{textAlign: this.centerAlign}}
     <mantra-text>
 
       <div className="mantra-text">
@@ -38,32 +94,53 @@ class Mantra extends React.Component {
         <WheelieKid></WheelieKid>
         <h3 className='mantra-header'>What is the infinite wheelie way?</h3>
 
-<p>The infinite wheelie way is about productively sublimating one's eternal will into positive, productive, and rational endeavors.  It involves constant and never-ending improvement through relentless directed learning as well as just-in-time learning.  It's about balancing will and wisdom: trying to maximize wisdom while maintaining a sustainable supply of will.  It's about being substrate-independent and not shackling yourself to any one technology stack: being a <em>compleat</em>, full-stack, multi-paradigmatic developer.  It's about integrating your higher and lower selves, and recognizing both the implicate and explicate order. It's about having the guts to try new things and taking the risks and sacrifices to get there.</p>
+        <p>The infinite wheelie way is about productively sublimating one's eternal will into positive, productive, and rational endeavors.  It involves constant and never-ending improvement through relentless directed learning as well as just-in-time learning.  It's about balancing will and wisdom: trying to maximize wisdom while maintaining a sustainable supply of will.  It's about being substrate-independent and not shackling yourself to any one technology stack: being a <em>compleat</em>, full-stack, multi-paradigmatic developer.  It's about integrating your higher and lower selves, and recognizing both the implicate and explicate order. It's about having the guts to try new things and taking the risks and sacrifices to get there.</p>
 
-<p>And it's also about implementing and manifesting that potential into reality -- in the form of creating actual workable software.  </p>
+        <p>And it's also about implementing and manifesting that potential into reality -- in the form of creating actual workable software.  </p>
 
-<p>It's about being at one with the infinite wheelie.</p>
+        <p>It's about being at one with the infinite wheelie.</p>
 
-<p>Are you at one with the Infinite Wheelie?</p>
-
-<p>Strive to be at one with infinite wheelie...</p>
+        <p>Strive to be at one with infinite wheelie...</p>
         <h3 className='mantra-header'>Apps</h3>
           <p/>
           <div className='mantra-app'>
-          <a  href="https://infinitewheelie.org/apps/vrgal/">VRGal</a>
+          // <a  href="https://infinitewheelie.org/apps/vrgal/">VRGal-old</a>
+          <a  href="html/apps/vrgal/intro.html">VRGal</a>
+          <p/>
+        </div>
+        <Router>
+          <div>
+            <Link onClick={this.goToNextPagel} to={{ pathname: "/apps/vrgal-intro"}}>vrgal-intro</Link>
+            <Route path="/apps/vrgal-intro" component={VRGalIntro} />
           </div>
+        </Router>
+        <button onClick={this.goToNextPage}>vrgal-intro</button>
 
 <div className='mantra-footer'>
-<p>The Infinite Wheelie is powered by <a href="https://www.youtube.com/watch?v=AGPlqP0tUyE&amp;list=PLiMRYDGr3ap04uX70m2R7p3REe4PSRFW2">ontolgical mathematics</a></p>
+<p>Infinite Wheelie is inspired by <a href="https://www.youtube.com/watch?v=AGPlqP0tUyE&amp;list=PLiMRYDGr3ap04uX70m2R7p3REe4PSRFW2">ontolgical mathematics</a></p>
 </div>
       </div>
     </mantra-text>
         // ReactDOM.render('<WheelieKid></WheelieKid>');
+              // <Link to="/apps/vrgal-intro"
     // <textarea cols="50">
     // <em>hello</em>
     // </textarea>
     )
+                // parms={{fuckWithMyState: this.fuckWithMyState.bind(this)}}
   }
+                // onClick={this.toggleHidden.bind(this)}
+          // <Router>
+          //   <div>
+          //     <ul>
+          //       <li>
+          //       <Link to="/apps/vrgal-intro">VRGal-route</Link>
+          //       </li>
+          //     </ul>
+          //     <Route path="/apps/vrgal-intro" component={VRGalIntro} />
+          //   </div>
+          // </Router>
+          // <vrgal-intro></vrgal-intro>
         // <wheelie-kid></wheelie-kid>
         // <WheelieKid></WheelieKid>
 
@@ -77,22 +154,40 @@ class Mantra extends React.Component {
     )
   }
 
-  // render() {
-  //   return React.createElement(
-  //     "div",
-  //     {className: "mt-class"  },
-  //     this.text()
-  //     // "hello "
-  //   )
-  // }
-
   render() {
+    // console.log(`Mantra.render: this.state.isHidden=${this.state.isHidden}`);
+    // if (!this.state.isHidden) {
+    //   console.log('path a');
+    //   return (
+    //     <div className= "mantra-div">
+    //       {this.mantraTitle()}
+    //       {this.text()}
+    //     </div>
+    //   )
+    // }
+    // else {
+    //   console.log('path b');
+    //   return (
+    //     <div></div>
+    //   )
+    // }
+    console.log(`Mantra: now in render`);
+    // debugger;
+    if (this.state.activeComponent === 'vrgal-intro') {
+      return (
+        <>
+          <VRGalIntro parms={{fuckWithMyState: this.fuckWithMyState.bind(this)}}/>
+        </>
+      )
+    }
+    else {
       return (
         <div className= "mantra-div">
           {this.mantraTitle()}
           {this.text()}
         </div>
       )
+    }
   }
 
 

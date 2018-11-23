@@ -1,0 +1,10 @@
+1) Build the project on local machine:
+
+yarn build
+
+2) Copy up to a staging directory on ec2.  You can't directly copy to the apache dir due to security.
+
+scp -rp -i /home/vturner/vtstuff/cloud/am-ec2/key_pairs/am-ec2_key_pair_2018-05-02.pem * ubuntu@infinitewheelie.org:/home/ubuntu/resources/tmp/dummy
+
+3) copy from here into /var/www/html:
+sudo cp -rp * $VRGAL_DEPLOY
