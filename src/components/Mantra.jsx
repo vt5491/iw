@@ -50,7 +50,10 @@ class Mantra extends React.Component {
             Syntactically, <em>an</em> infinite wheelie in its individual form,
             or <em>the</em> infinite wheelie in its collective form, is the
             expression of the{" "}
-            <a href="http://www.academia.edu/6559621/The_Zero_Dimension_Quantum_Universe">
+            <a
+              className="text-warning"
+              href="http://www.academia.edu/6559621/The_Zero_Dimension_Quantum_Universe"
+            >
               zinfinite
             </a>{" "}
             composition of zero and infinity. The symbol for zero is represented
@@ -84,7 +87,7 @@ class Mantra extends React.Component {
           </div>
           <p />
           <h3 className="mantra-header">
-            What is the Infinite Wheelie experience?
+            What is the Spirit of the Infinite Wheelie?
           </h3>
 
           <p>
@@ -110,8 +113,8 @@ class Mantra extends React.Component {
             forever. Of course, the <em>instant</em> you have this thought you
             know you're doomed! But that feeling right before you start to
             "think" about it, and the few seconds afterward while you're still
-            maintaining it (much to your amazement)-- that's what the infinite
-            wheelie experience is all about.
+            maintaining it (much to your amazement)-- that's the spirt of the
+            infinite wheelie.
           </p>
           <p />
           <WheelieKid />
@@ -136,7 +139,7 @@ class Mantra extends React.Component {
             reality -- in the form of creating actual workable software.{" "}
           </p>
 
-          <p>It's about being at one with the infinite wheelie.</p>
+          <p>The Infinite Wheelie can not and will not be stopped!</p>
 
           <h3 className="mantra-header">Apps</h3>
           <p />
