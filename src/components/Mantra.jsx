@@ -101,7 +101,7 @@ class Mantra extends React.Component {
             acceleration to maintain. Now think of the feeling you experience
             when sustaining an exceptionally long one. As motocross-struck kids
             riding our bikes around the neighborhood, most of us could only hope
-            to sustain one for a few seconds at best.{" "}
+            to hold one for a few seconds at best.{" "}
           </p>
 
           <p>
@@ -139,7 +139,10 @@ class Mantra extends React.Component {
             reality -- in the form of creating actual workable software.{" "}
           </p>
 
-          <p>The Infinite Wheelie can not and will not be stopped!</p>
+          <p>
+            The Infinite Wheelie is uncreated and eternal. It will not and can
+            not be stopped.
+          </p>
 
           <h3 className="mantra-header">Apps</h3>
           <p />
