@@ -170,7 +170,12 @@ class Mantra extends React.Component {
           <div className="centered">
             <a href="html/apps/vrgal/intro.html">VRGal</a>
           </div>
+          <p/>
+          <div className="centered">
+            <a href="html/apps/lss/intro.html">Loopy Surface Surfers</a>
+          </div>
 
+          <p/>
           <div className="mantra-footer">
             <p>
               Infinite Wheelie is inspired by{" "}

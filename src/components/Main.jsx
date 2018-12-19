@@ -59,6 +59,9 @@ class Main extends React.Component {
           <form action="html/apps/vrgal/intro.html">
             <input type="submit" value="VRGal" />
           </form>
+          <form action="html/apps/lss/intro.html">
+            <input type="submit" value="Loopy Surface Surfers" />
+          </form>
         </div>
       </>
     );

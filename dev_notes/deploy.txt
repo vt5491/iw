@@ -14,7 +14,7 @@ b) scp -rp -i /home/vturner/vtstuff/cloud/am-ec2/key_pairs/am-ec2_key_pair_2018-
 
 3) copy from here into /var/www/html:
 
-a) clear out everything from $VRGAL_DEPLOY except for the apps dir:
+a) clear out everything from $IW_DEPLOY except for the apps dir:
 
 i) sudo rm asset-manifest.json favicon.ico index.html manifest.json precache-manifest.* service-worker.js
 
@@ -22,8 +22,8 @@ ii) sudo rm -rf html/ img/ libs/ static/
 
 
 b)
-cd ~/resource/tmp/dummp
+cd ~/resource/tmp/dummy
 
-sudo cp -rp * $VRGAL_DEPLOY
+sudo cp -rp * $IW_DEPLOY
 
 Note: VRGal is staged under '$VRGAL_DEPLOY/apps/vrgal' (not to be confused with the web site intro page is at $VRGAL_DEPLOY/html/apps).  Everything else under '/var/www/html' belongs exclusively to this 'static' react app.
